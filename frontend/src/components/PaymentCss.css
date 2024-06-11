@@ -1,0 +1,132 @@
+/* CSS Variables for easier theme management */
+:root {
+  --primary-color: #ff5252;
+  --primary-color-hover: #e04848;
+  --secondary-color: #fff;
+  --font-color: #333;
+  --border-radius: 10px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Basic styling for the payment page */
+.payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d5d3d4;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+  
+}
+
+.payment-container {
+  background: var(--secondary-color);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-container h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #ff5252;
+  font-size: 24px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--font-color);
+  font-size: 18px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  font-size: 18px;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.pay-btn:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 25px;
+  }
+
+  .form-group input {
+    padding: 12px;
+  }
+
+  .pay-btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-container {
+    padding: 20px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .pay-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

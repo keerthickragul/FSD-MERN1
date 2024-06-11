@@ -1,0 +1,105 @@
+
+:root {
+  --primary-color: #ff5252;
+  --primary-color-hover: #e04848;
+  --secondary-color: #fff;
+  --font-color: #333;
+  --border-radius: 8px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.outers{
+ 
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center; 
+  background-color: #d5d3d4;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+}
+
+.inners{
+  margin-top: 75px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  user-select: none;
+  cursor: default;
+}
+.inners h1{
+  padding-left: 200px;
+  color: #f7444e;
+  
+  }
+.inners label {
+    display: block;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 650;
+    color: black ;
+     /* Set labels as block-level elements */
+     /* Add some bottom margin for spacing */
+     /* Align the text of labels to the center */
+  }
+.inners input {
+  width: 70%;
+  height: 30px;
+  margin: 0 auto; /* Center the input fields */
+  display: block; /* Set inputs as block-level elements */
+  border-radius: 5px;
+  border: solid 2px #E5E1DA;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 30px; /* Adjust margin bottom for spacing */
+}
+.loginbtn{
+  width: 60%;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 100px;
+  font-size: x-large;
+  font-family: Cambri;
+  color: #FFFFFF;
+  background-color: #f7444e;
+  border-radius: 5px;
+  border: solid 2px #f7444e;
+}
+.loginbtn:hover{
+  box-shadow: 1px 1px 1px 1px #f7444e;
+}
+
+.inners p{
+  font-size: 22px;
+  text-align: center;
+}
+.inners p a{
+  color: #f7444e;
+  font-size: 25px;
+  text-decoration: none;
+}
+.inners input {
+  width: 70%;
+  height: 30px;
+  margin: 0 auto; /* Center the input fields */
+  display: block; /* Set inputs as block-level elements */
+  border-radius: 5px;
+  border: solid 2px #E5E1DA;
+  font-size: large;
+  padding: 10px; /* Increase padding for better visual */
+  margin-bottom: 30px; /* Adjust margin bottom for spacing */
+  transition: border-color 0.3s ease; /* Add transition effect for smoother hover */
+}
+
+/* Style for input when hovered */
+.inners input:hover {
+  border-color: #f7444e; /* Change border color on hover */
+}
+
+/* Style for input when focused */
+.inners input:focus {
+  border-color: var(--primary-color);
+  outline: none; /* Add box shadow on focus for better visual */
+}

@@ -1,0 +1,109 @@
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    user-select: none;
+    cursor: default;
+}
+.wholepage{
+    background-color: #d5d3d4;
+}
+.itemdiv{
+    
+    width: 100%;
+    height: 70px;
+    background-color: #f7444e;
+    margin-top: -50px;
+    text-align: center;
+    user-select: none;
+    cursor: default;
+}
+.itemdiv h3{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 50px;
+   color: white;
+}
+.cartimg{
+    width: 50px;
+    height: 50px;
+    margin-top: -100px;
+    margin-left: 600px;
+    position: absolute;
+}
+.itemdiv span{
+    margin-top: -70px;
+    margin-left: 650px;
+    position: absolute;
+    border-radius: 10px;
+    background-color:#d5d3d4;
+    
+}
+.cartTab{
+    width: 400px;
+    background-color: #d5d3d4;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    user-select: none;
+    cursor: default;
+    
+}
+.carth1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 40px;
+    color: #f7444e;
+}
+.cartTab .cartbtn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cartbtn .close{
+    background-color: #f7444e;
+    border: #f7444e;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: large;
+}
+.checkout{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: large;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #f7444e;
+    color: white;
+   
+    border-radius: 50%;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: black;
+}
+.listCart .item:nth-child(even){
+    background-color: #d5d3d4;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+.span-count{
+    color: #f7444e;
+    
+}

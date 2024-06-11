@@ -1,0 +1,153 @@
+.firstbox {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 730px;
+  background-color: #d5d3d4;
+  background-image: url('F:/React/fsd-project1/fsd-project1/frontend/src/images/slider-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+}
+
+.divleft {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px; 
+  right: 100px; /* Adjusted left margin */
+  box-sizing: border-box;
+}
+
+.sales {
+  font-size: 2.5rem;
+  color: #f7444e;
+  margin-bottom: 10px;
+}
+
+.eveything {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.leftinner {
+  margin-bottom: 20px;
+}
+
+.firstpara {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+.firstbtn {
+  width: 200px;
+  background-color: #f7444e;
+  border-radius: 5px;
+  height: 45px;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.firstbtn:hover {
+  background-color: white;
+  color: #f7444e;
+  border: 1px solid #f7444e;
+  transform: scale(1.05);
+}
+
+.firstbtn:active {
+  transform: scale(0.95);
+}
+
+.divright {
+  display: none; /* Hide the right div for now */
+}
+
+@media (min-width: 768px) {
+  .firstbox {
+      flex-direction: row;
+      padding: 50px;
+  }
+
+  .divleft {
+      width: 40%;
+      margin: 0;
+  }
+
+  .divright {
+      display: block;
+      width: 40%;
+      height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sales,
+  .eveything {
+      font-size: 3rem;
+  }
+
+  .firstbtn {
+      font-size: 1.2rem;
+  }
+}
+
+/* Styles for About and Contact Info sections */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  margin-top: 173px;
+  border-top: 1px solid #ddd;
+}
+
+.about, .contact {
+  width: 45%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #d5d3d4;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+  margin-right: 10%;
+}
+
+.contact {
+  margin-left: 10%;
+}
+
+.about h2, .contact h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about p, .contact p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
